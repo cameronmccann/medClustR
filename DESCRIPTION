@@ -13,3 +13,8 @@ Suggests:
 Config/testthat/edition: 3
 Depends: 
     R (>= 4.1.0)
+Imports: 
+    dplyr (>= 1.1.4),
+    glue (>= 1.8.0),
+    lme4 (>= 1.1.37),
+    SuperLearner (>= 2.0.29)

@@ -47,12 +47,16 @@ usethis::use_build_ignore("dev")
 
 # license/readme/test infra
 usethis::use_mit_license()
-# initiate readme
-usethis::use_readme_md()
+# # initiate readme
+# usethis::use_readme_md()
+# initiate readme rmarkdown (this creates README.md); after modifying rmarkdown, devtools::build_readme() will update README.md
+usethis::use_readme_rmd()
 # initial setup for testing (3rd edition)
 usethis::use_testthat(3)
 usethis::use_roxygen_md()
 usethis::use_package("R", type = "Depends", min_version = "4.1.0")
+
+
 
 # optional: git and gitignore
 # usethis::use_git()
