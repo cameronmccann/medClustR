@@ -17,4 +17,5 @@ Imports:
     dplyr (>= 1.1.4),
     glue (>= 1.8.0),
     lme4 (>= 1.1.37),
+    origami (>= 1.0.7),
     SuperLearner (>= 2.0.29)

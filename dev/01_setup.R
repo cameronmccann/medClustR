@@ -12,6 +12,7 @@ usethis::use_package(package = "SuperLearner", min_version = TRUE)
 usethis::use_package(package = "lme4", min_version = TRUE)
 usethis::use_package(package = "dplyr", min_version = TRUE)
 usethis::use_package(package = "glue", min_version = TRUE)
+usethis::use_package(package = "origami", min_version = TRUE)
 
 # usethis::use_package(package = "ggplot2", min_version = TRUE)
 # usethis::use_package(package = "mvtnorm", min_version = TRUE)
@@ -28,7 +29,11 @@ if (!file.exists("R/bound.R")) usethis::use_r("bound")
 if (!file.exists("R/crossfit.R")) usethis::use_r("crossfit")
 
 if (!file.exists("R/effect.R")) usethis::use_r("effect")
-# if (!file.exists("R/make_fold_K.R")) usethis::use_r("make_fold_K")
+
+# # Original make_fold_K function
+# if (!file.exists("R/OG-make_fold_K.R")) usethis::use_r("OG-make_fold_K")
+if (!file.exists("R/make_fold_K.R")) usethis::use_r("make_fold_K")
+
 # if (!file.exists("R/eif.R")) usethis::use_r("eif")
 #
 # if (!file.exists("R/a_c.R")) usethis::use_r("a_c")
@@ -96,7 +101,7 @@ devtools::check()
 # Load package
 devtools::load_all()
 
-# Run test
+# Run test scripts
 testthat::test_file("tests/testthat/test-crossfit.R")
 
 
